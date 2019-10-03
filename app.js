@@ -48,12 +48,177 @@
 //}
    // console.log(name);
 
-for (let i = 0 ; i < 10 ; i++)
-{
-        let name ="nani";//Local Scope
-        console.log(i)
-}        
-    console.log(name);
+//for (let i = 0 ; i < 10 ; i++)
+//{
+       // let name ="nani";//Local Scope
+      //  console.log(i)
+//}        
+    //console.log(name);
+
+//03/10/19 :
+//Non-primitive Datatypes or Object reference....:
+//1.Arrays
+//let languages =['JavaScript',"Ruby",'Python','Node.js','Java',10,undefined,null];
+
+//console.log(languages.length);
+//console.log(languages[0]);
+//console.log(languages[2]);
+//Array can Define in 4 ways:
+var array =['java','Reactjs','Nodejs'];
+var array1 =new Array('java','Javascript','AWS');
+var array3 =Array.of('java','SQL');
+var array4 =Array(3);
+
+console.log(array);
+console.log(array1);
+console.log(array3);
+console.log(array4);
+
+console.log(typeof(array1),typeof(array),typeof(array3));
+
+console.log(Array.isArray(array1));
+console.log(Array.isArray(array3));
+console.log(Array.isArray(array4));
+var array5 ="Hello";
+console.log(Array.isArray(array5));
+
+//String to Array
+var str ="hello Javascript and nodejs";
+var strwithArrary = str.split('');
+console.log(strwithArrary);
+
+var es6way =Array.from(str);
+console.log(es6way);
+
+let [...spread] = str;
+console.log(spread.join(''));
+
+//Concat:
+let array6 =['ECE','EEE','CSE'];
+let array7 =['MEC','CIVIL'];
+let concatArray =array6.concat(array7,'AI');
+
+console.log(concatArray);
+
+//Reverse the String:
+var string="Hello javascript";
+var strwithArray1 =[...string].reverse().join('');
+console.log(strwithArray1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
