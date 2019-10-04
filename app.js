@@ -105,6 +105,91 @@ var string="Hello javascript";
 var strwithArray1 =[...string].reverse().join('');
 console.log(strwithArray1);
 
+//OBJECTS:
+//-Literal way (1st Way0:
+let Users = {
+    name : "ANU",
+    age : 20,
+    company : "CGI",
+    skils : ['java','javascript','SQL'],
+    salary : 10000
+};
+
+console.log(Users['name']);
+console.log(Users.age);
+console.log(Users.skils);
+
+//Constructer Way:
+let obj = new Object();
+    obj.name = "MANU";
+    obj.age = 20;
+    obj.company ="CGI";
+    obj.skills =['java','javascript','SQL'];
+
+    console.log(obj);
+
+//
+let name ="Prince";
+let age = 20;
+let company = "TFI";
+
+let Userdata ={
+    //key : value
+    name : name,
+    age :age,
+    company : company,
+    salary : 20000
+};
+    console.log(Userdata);
+//ES-06:
+let Userdata1 ={
+    name,
+    age,
+    company,
+    salary : 20000
+};
+    console.log(Userdata1);
+
+{
+    console.log('hello javasciript');
+} //this is  not object this is IIFE(Immediate Invoke Function Expression) in ES6
+
+//var obj ={
+    //key : value
+//}//this object
+
+//How to create multiple Objects ?
+//Arrays are used to store multile Objects
+var Users1 = [
+    {
+        name :"Anu",
+        age :20,
+        company :"TFI",
+        salary :20000,
+        gender:"female",
+        photo :"path"
+    },
+    {
+        name :"Manu",
+        age :21,
+        company :"CGI",
+        salary :21000,
+        gender:"male",
+        photo :"path"
+    },
+    {
+        name :"Prince",
+        age :26,
+        company :"TFI",
+        salary :600000,
+        gender:"male",
+        photo :"path"
+    }
+];
+    console.log(Users1);
+    console.log(Users1[0]);
+
+//We can use Reserved keywords in JS objects 
 
 
 
