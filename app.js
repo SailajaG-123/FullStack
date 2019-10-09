@@ -326,18 +326,20 @@
 
 //Arrow Function(ES-06):
 let Username = () => {//if no Parameter remove brackets() instead use Underscore(_).
-    console.log('Username here')
+    console.log('Username here');
 }
+Username();
 
 let Password = () => console.log('Password here');//If one line block remove Curly braces.
-
+Password();
 
 let email = (email) => {
     return email;
 }//es6 return type with parameter.
+console.log(email('sailu.g@gmail.com'));
 
-let email = email => email;//If one line block remove Curly braces,brackets  and return statement..
-
+let email1 = email => email;//If one line block remove Curly braces,brackets  and return statement..
+    console.log(email1('sailu1.g@gmail.com'));
 
 
 
