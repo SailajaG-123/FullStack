@@ -236,20 +236,20 @@
       //  console.log(Obj.name);//Expected output = Guldu
 
 //Object.alldata() method:
-let emp ={
+//let emp ={
    
-    'emp-name':'manu',
-    'emp-loc':'Blore',
-    'emp-age':20,
+   // 'emp-name':'manu',
+   // 'emp-loc':'Blore',
+    //'emp-age':20,
 
-    alldata(){
-        console.log(`${this['emp-name']} and 
-        ${this['emp-age']} and 
-        ${this['emp-loc']}`)
-    }
-};
+    //alldata(){
+        //console.log(`${this['emp-name']} and 
+        //${this['emp-age']} and 
+        //${this['emp-loc']}`)
+   // }
+//};
 
-    console.log(emp.alldata);
+    //console.log(emp.alldata);
 //Object.values() and Object.keys() methods:
 //let Student={
     //name : 'Keerthi',
@@ -266,8 +266,77 @@ let emp ={
 
 
 
+//09/10/2019:
+//function number(){
+    //let args = arguments;
+    //console.log(args);
+    //console.log(Array.isArray(args));//false Because it is Array like Object
+    //console.log(typeof args);
+
+    //let [...checkspread] = args;//[...]operator using fginal Arrayor converting Array like Object Into Ori
+    //let ArrayFrom = Array.from(args);
+    //console.log(typeof checkspread); //Object
+    //console.log(Array.isArray(checkspread));//True it is Original Array
+  
+
+   // console.log(arguments);
+    
+//}
+
+//number (1, 2, 3, 4, 5,7,8,9,10);
+
+//Function Closure in JavaScript:
+// var simpletext = 'Hello Simple text ';
+// function jspiders(){ //local Scope
+//     let jspidertext = 'Hello local scope';
+
+//     console.log(simpletext);
+//     console.log(jspidertext);
+
+//     function developers(){ //local scope within a function
+//         let developertext = 'Hello Developers How are You (Function within a Function )';
+//         console.log(developertext);
+
+//         console.log(jspidertext);//Clouser here
+//    }//called
+//     developers();//calling developers
+// }
+// jspiders();//calling jspiders here 
+
+// function Parent(callback){
+//     console.log('Hello H R U ?');
+//     callback();
+// }
+// Parent(function(){
+//     alert('Hello Nani');
+// })
+
+//Function Hoisting:
+//Naming Function:It will work
+// sachin();
+// function sachin(){
+//     console.log('hey sachin how are you?');
+// }
+ 
+// //Function Ecpression Hoisting will not Work:
+// dravid();
+// var dravid = function(){
+//     console.log('hey Dravid how are you?');
+// }
+
+//Arrow Function(ES-06):
+let Username = () => {//if no Parameter remove brackets() instead use Underscore(_).
+    console.log('Username here')
+}
+
+let Password = () => console.log('Password here');//If one line block remove Curly braces.
 
 
+let email = (email) => {
+    return email;
+}//es6 return type with parameter.
+
+let email = email => email;//If one line block remove Curly braces,brackets  and return statement..
 
 
 
