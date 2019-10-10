@@ -325,28 +325,134 @@
 // }
 
 //Arrow Function(ES-06):
-let Username = () => {//if no Parameter remove brackets() instead use Underscore(_).
-    console.log('Username here');
-}
-Username();
+// let Username = () => {//if no Parameter remove brackets() instead use Underscore(_).
+//     console.log('Username here');
+// }
+// Username();
 
-let Password = () => console.log('Password here');//If one line block remove Curly braces.
-Password();
+// let Password = () => console.log('Password here');//If one line block remove Curly braces.
+// Password();
 
-let email = (email) => {
-    return email;
-}//es6 return type with parameter.
-console.log(email('sailu.g@gmail.com'));
+// let email = (email) => {
+//     return email;
+// }//es6 return type with parameter.
+// console.log(email('sailu.g@gmail.com'));
 
-let email1 = email => email;//If one line block remove Curly braces,brackets  and return statement..
-    console.log(email1('sailu1.g@gmail.com'));
+// let email1 = email => email;//If one line block remove Curly braces,brackets  and return statement..
+//     console.log(email1('sailu1.g@gmail.com'));
+
+//No bindings in ES6:
+// let Users = {
+//     name : 'manu',
+//     age : 20,
+//     company : 'TFi',
+//     details : function(){
+//         console.log(`hello my name is ${this.name} and my age is ${this.age} and i worked for ${this.company}`);
+//     }
+// };
+// Users.details();
+
+// //ES06 will not work with 'this keyword instead use 'Function name :
+// let Users1 = {
+//     name : 'manu',
+//     age : 20,
+//     company : 'TFi',
+//     details : () => {
+//         console.log(`hello my name is ${Users1.name} and my age is ${Users1.age} and i worked for ${Users1.company}`);
+//     }
+// };
+// Users1.details();
+    
+//Argument Object will not work wiyh Arrow Function :
+// let numbers = () => {
+//     console.log(arguments);
+// };
+// numbers(10,20,23,51);//ERROR:app.js:368 Uncaught ReferenceError: arguments is not defined
+
+// let numbers1 = function() {
+//     console.log(arguments);
+// };
+// numbers1(10,20,23,51);//Output : Arguments(4) [10, 20, 23, 51, callee: ƒ, Symbol(Symbol.iterator):
+
+//Rest Parameter:
+    // let numbers2 = (...rest) => {
+    //     console.log(rest);
+    //     console.log(typeof rest);
+    //      console.log(Array.isArray(rest));
+    // };
+    // numbers2(10,20,23,51);
+
+    // let es5 = function () {
+    //     console.log(arguments);
+    //     console.log(typeof arguments);
+    //      console.log(Array.isArray(arguments));
+    // };
+    // es5(10,20,23,51);
 
 
+// //ARRAY METHODS :
+// let lang = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+//     lang.forEach(function (items) { //forEach() method can be used only with Arrays
+//         console.log(items);
+//     });
 
+// var str ='hello javascript';
+//     [...str].forEach(function (items) { //[...]spread operator can be used to string into Array.
+//         console.log(items)
+//     });
 
+//Normal for loop:
+// for(let i=0;i<lang.length;i++){
+//     console.log(lang[i])
+// }
+//let lang = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+// lang.forEach((value, index,array) =>{
+//     console.log(value);
+//     console.log(index);
+//     console.log(array);
+// });
 
+//for of Loop :
+// let lang = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+//     for (let x of lang){
+//         console.log(x);
+//     }
 
+// let str = 'hello Javascript';
+//     for(let y of str){
+//         console.log(y);
+//     }
+//     console.log(typeof str);
 
+//POP and DELETE:
+// let lang = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+//     console.log(lang);
+// var popx = lang.pop();
+//     console.log(popx);
+//     console.log(lang);
+
+// let lang = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+//     console.log(lang);
+// var test = delete lang[3];
+//     //console.log(test);
+//     console.log(lang);
+
+//
+//let lang = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+    // lang.shift();
+    //     console.log(lang);
+
+    // lang.unshift('Javascript','HTML & CSS3')
+    //     console.log(lang);
+
+    // lang.push('firebase')
+    //     console.log(lang);
+
+   // lang.splice(0);
+     //   console.log(lang); //It will remove all values 
+
+    //  lang.splice(3,1,'DOM');
+    //     console.log(lang);
 
 
 
