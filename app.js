@@ -454,24 +454,109 @@
     //  lang.splice(3,1,'DOM');
     //     console.log(lang);
 
+//11/10/19 :
+//fill and include methids :
 
+// let lang = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+//     //lang.fill('Nani');
+//     console.log(lang);
 
+//     let test = lang.includes('nodejs');
+//     if(lang.includes('nodejs'))
+//     {
+//         alert('Nodejs is Present here...');
+//     }
+//     else {
+//         alert('no it is not present here...');
+//     }
 
+//reduce()  method :
+// var numbers = [10,20,30,40,50,60,70,80,90,500,1000,50000];
+//     var reduce = numbers.reduce(function (a,b) {
+//         //console.log(a);
+//         //console.log(b);
+//         return a+b;
+//     })
+//     console.log(reduce);
 
+//Using fat Arrow function :
+// var numbers = [10,20,30,40,50,60,70,80,90,500,1000,50000];
+// var reducewithfarArrow = numbers.reduce((a,b)=> a+b)
+//     console.log(reducewithfarArrow);
+    //console.log(reduce);
 
+//Sort() method :
+//Using string :
+// let lang = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+// let sortedarray= lang.sort();
+//     console.log(sortedarray);
 
+// //Using numbers :
+// var numbers =[10,20,51,25,14,17,11,500,166000,1500];
+// var sortwithnumbers = numbers.sort((a,b) => a-b) //ascending order
+//     console.log(sortwithnumbers);
 
+//     var numbers1 =[10,20,51,25,14,17,11,500,166000,1500];
+//     var sortwithnumbers1 = numbers1.sort((a,b) => b-a) //descending order
+//         console.log(sortwithnumbers1);
 
+//filter() method :
+// let array = ['nodejs','angular','expressjs','Reactjs','mongoDB','VUEjs'];
+//     var resultwithes5 = array.filter(function (word) {
+//     return word.length >7;
+//     });
 
+//     var resultwithes6 = array.filter(word => word.length >7);
 
+//     console.log(resultwithes5);
+//     console.log(resultwithes6);
+//     console.log(array);
 
+//To remove duplicate values from an Array using filter() method
+// var array = ['mongoDB','nodejs','angular','nodejs','angular','expressjs','Reactjs','mongoDB','mongoDB','mongoDB','mongoDB','mongoDB','VUEjs'];
+//     var es5way = array.filter(function(value,index,array){
+//         // console.log(array);
+//         // console.log(index);
+//         // console.log(value);
 
+//         return array.indexOf(value)==index;
+//     });
+//         console.log(es5way);
+//     var array1 = ['mongoDB','nodejs','angular','nodejs','angular','expressjs','Reactjs','mongoDB','mongoDB','mongoDB','mongoDB','mongoDB','VUEjs'];
+//     var [...es6way] = new Set(array);
+//         console.log(es6way);
 
+//Map() method :
+// var numbers = [1,3,5,10];
+// var result =numbers.map(x => x*5);
+// var foreachway = numbers.forEach(x => {
+//     return x*5;
+// });
+//     console.log(foreachway);
+//     console.log(result);
+//     console.log(numbers);
 
+//reverese() method :
+// var numbers = [1,2,3,4,5];
+//     var result = numbers.reverse();
+//         console.log(result);
 
+// var str = ['sachin','dravid','dhoni','malinga'];
+//     var result1 = str.toString();
+//         console.log(result1);
+//     var result2 = str.join(' ');
+//         console.log(result2);
 
+//     let [...strtoArray] = result2;
+//     let str1 = strtoArray.reverse().join('');
+//         console.log(str1);
+//         console.log(typeof result2); 
 
-
+function Username(name) {
+    return [...name].reverse().join('');
+}
+console.log(Username('anu').toUpperCase());
+ 
 
 
 
