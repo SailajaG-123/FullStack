@@ -552,15 +552,59 @@
 //         console.log(str1);
 //         console.log(typeof result2); 
 
-function Username(name) {
-    return [...name].reverse().join('');
-}
-console.log(Username('anu').toUpperCase());
+// function Username(name) {
+//     return [...name].reverse().join('');
+// }
+// console.log(Username('anu').toUpperCase());
  
+//16/10/19:
+//DOM :TagNam() method:
+// let list =document.getElementsByTagName('li');
+// let [...li] = list;
+// li.forEach(x => {
+//     console.log(x);
+//     x.classList.add('nani');
+//     x.innerHTML='Hey Nani what are you doing';
+// });
 
+//querySelectoeAll() :
+// var odd = document.querySelectorAll('li:nth-child(odd)');
+// var even = document.querySelectorAll('li:nth-child(even)');
 
+// odd.forEach(x =>{
+//     x.classList.add('odd');
+//     x.innerHTML='ODD here';
+// });
+// even.forEach(y => {
+//     y.forEach.add('even');
+//     y.innerHTML='EVEN here';
+// });
 
+//addEventListener() :
+var oddButton = document.getElementById('odd');
+var evenButton = document.getElementById('even');
+var oddLi = document.querySelectorAll('li:nth-child(odd)');
+var evenLi = document.querySelectorAll('li:nth-child(even)');
 
+//access DOM with events :
+oddButton.addEventListener('mouseenter',() => {
+    console.log('mouse entered ..odd');
+    oddLi.forEach(odd => {
+        odd.classList.add('odd');
+        });
+        evenLi.forEach(even => {
+            even.classList.remove('even');
+        });
+});
+evenButton.addEventListener('mouseenter',() => {
+    console.log('mouse entered even..');
+    evenLi.forEach(even => {
+        even.classList.add('even');
+    });
+    oddLi.forEach(odd => {
+        odd.classList.remove('odd');
+    });
+});
 
 
 
